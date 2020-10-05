@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-primary btn-call-me">Позвонить нам</button>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="text-center form-modal">
+                <p class="form-header">Забронируйте</p>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <label class="sr-only" for="name">Name</label>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><img src="img/name-icon.png" alt="name-icon"></div>
+                        </div>
+                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="phone-number">Phone Number</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><img src="img/phone-icon.png" alt="phone-icon"></div>
+                        </div>
+                        <input type="text" class="form-control" id="phone-number" placeholder="Номер телефона">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="sr-only" for="date">Date</label>
+                    <div class="input-group mb-2">
+                        <!-- <div class="input-group-prepend">
+                            <div class="input-group-text"><img src="img/data-icon.png" alt="data-icon"></div>
+                        </div> -->
+                        <input type="date" class="form-control" id="date" placeholder="Дата">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-form">Забронировать место</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col car">
+                        <img src="img/car.png" alt="car" class="align-bottom">
+                    </div>
+                    <div class="col">
+                        <div class="row" style="min-height: 130px;">
+                            <div class="col">
+                                <a href="#header" id="scroll">
+                                    <div class="sign text-center">
+                                        <div class="crossed"></div>
+                                        <a href="#header">Главная</a>
+                                    </div>
+                                </a>
+                                <div class="column"></div>
+                            </div>
+                            <div class="col">
+                                <a href="#price" id="scroll">
+                                    <div class="sign text-center">
+                                        <div class="crossed"></div>
+                                        <a href="#price">Цены</a>
+                                    </div>
+                                </a>
+                                <div class="column"></div>
+                            </div>
+                            <div class="col">
+                                <a href="#contacts" id="scroll">
+                                    <div class="sign text-center">
+                                        <div class="crossed"></div>
+                                        <a href="#contacts">Контакты</a>
+                                    </div>
+                                </a>
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/road.jpg" alt="road" class="road align-bottom">
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Пассажирские перевозки 
+        и передачи любого типа</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Киев-Москва-Киев</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col station">
+                    <h4>Отправление:</h4>
+                    <img src="img/m-green.png" alt="m-green-logo" class="m-logo">
+                    <h5 class="departure">Дарница</h5>
+                    <h4>Прибытие:</h4>
+                    <img src="img/m-red.png" alt="m-red-logo" class="m-logo">
+                    <h5 class="arrival">Румянцево</h5>
+                </div>
+                <div class="col">
+                    <form class="text-center">
+                        <p class="form-header">Забронируйте</p>
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <label class="sr-only" for="name">Name</label>
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><img src="img/name-icon.png" alt="name-icon"></div>
+                                </div>
+                                <input type="text" class="form-control" id="name" placeholder="Имя">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="phone-number">Phone Number</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><img src="img/phone-icon.png" alt="phone-icon"></div>
+                                </div>
+                                <input type="text" class="form-control" id="phone-number" placeholder="Номер телефона">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only" for="date">Date</label>
+                            <div class="input-group mb-2">
+                                <!-- <div class="input-group-prepend">
+                                    <div class="input-group-text"><img src="img/data-icon.png" alt="data-icon"></div>
+                                </div> -->
+                                <input type="date" class="form-control" id="date" placeholder="Дата">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-form">Забронировать место</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="contact text-center">
+                        <h6>Заказ микроавтобуса</h6>
+                        <p class="number">+7 (977) 747-95-09</p>
+                        <p class="number">+380 (93) 669-39-79</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="transition text-center">
+        <span class="dot"></span>
+        <hr>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="about-header">О нас</h3>
+                    <p class="travel">Удобные поездки с комфортом</p>
+                    <img src="img/about_car.jpg" alt="car" class="about-img">
+                </div>
+                <div class="col-lg">
+                    <p class="about-decs">
+На протяжении всей работы фирмы люди, пользующиеся нашими услугами всегда остаются довольны.
+Основным направлением пассажирских перевозок является Киев-Москва-Киев. 
+Помимо пассажирских перевозок мы оказываем спектр услуг, таких как: перевозка багажа, передача из рук в руки, перевозка домашних животных.
+Предлагаем удобный сервис быстрого бронирования билетов на поездки  Киев-Москва, Москва-Киев, чтобы забронировать место, вам достаточно позвонить по номеру телефона, указанному на сайте или воспользоваться формой обратной связи. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transition text-center">
+        <span class="dot"></span>
+        <hr>
+    </section>
+
+    <section id="provide">
+        <div class="container">
+            <h3 class="provide-header text-center">Мы вам предоставим:</h3>
+            <div class="row">
+                <div class="col text-center">
+                    <img src="img/icon_provide_1.png" alt="icon">
+                    <p class="provide-text">Опытных водителей</p>
+                </div>
+                <div class="col text-center">
+                    <img src="img/icon_provide_2.png" alt="icon">
+                    <p class="provide-text">Удобные микроавтобусы</p>
+                </div>
+                <div class="col text-center">
+                    <img src="img/icon_provide_3.png" alt="icon">
+                    <p class="provide-text">Быструю доставку передач</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transition text-center">
+        <span class="dot"></span>
+        <hr>
+    </section>
+
+    <section id="price">
+        <div class="container">
+            <h3 class="price-header text-center">Цены</h3>
+            <div class="row">
+                <div class="col text-center justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Из Киева</h5>
+                            <p class="card-text">Время выезда уточняйте при бронировании места</p>
+                            <p class="card-text price-text">1000 грн</p>
+                            <img src="img/card-icon.png" class="card-image" alt="price-icon">
+                            <button type="button" class="btn btn-primary card-btn" data-toggle="modal" data-target="#Modal">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center justify-content-center">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Из Москвы</h5>
+                            <p class="card-text">Время выезда уточняйте при бронировании места</p>
+                            <p class="card-text price-text">2500 руб</p>
+                            <img src="img/card-icon.png" class="card-image" alt="price-icon">
+                            <button type="button" class="btn btn-primary card-btn" data-toggle="modal" data-target="#Modal">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg text-center">
+                    <img src="img/contact_phone.png" alt="contact_phone">
+                </div>
+                <div class="col-lg text-center">
+                    <h3 class="contact-header">Наши контакты</h3>
+                    <p class="contact-desc">У вас остались вопросы?
+Напишите сообщение, 
+мы ответим вам.</p>
+                    <p class="contact-number">+7 (977) 747-95-09</p>
+                    <p class="contact-number">+380 (93) 669-39-79</p>
+                    <button type="button" class="btn btn-primary contact-btn" data-toggle="modal" data-target="#Modal">
+                        Написать нам
+                    </button>
+                    <div class="icons">
+                        <a href=""><img src="img/telegram-icon.png" alt="telegram-icon"></a>
+                        <a href=""><img src="img/whatsapp-icon.png" alt="whatsapp-icon"></a>
+                        <a href=""><img src="img/viber-icon.png" alt="viber-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">2020 Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+body{
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: black !important;
+    font-size: 28px;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.transition {
+    position: relative;
+    align-items: center;
+}
+
+hr {
+    height: 8px !important;
+    width: 100vw;
+    background-color: #0d3c7c;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.dot {
+    align-items: center;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border: 10px solid #0d3c7c;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(img/data-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+.btn-call-me {
+    position: fixed;
+    border: none !important;
+    background-color: #49bb7b !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px !important;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    margin: 20px;
+}
+
+/* NAV */
+
+nav {
+    padding-top: 30px;
+    position: relative;
+    margin-bottom: 115px;
+}
+
+.car {
+    position: absolute;
+    bottom: -30px;
+    z-index: 2;
+}
+
+.sign {
+    width: auto;
+    height: auto;
+    outline: 2px solid black;
+    outline-offset: -6px;
+    background-color: white;
+    position: relative;
+}
+
+.crossed {
+    visibility: hidden;
+    position: absolute; 
+    background: linear-gradient(to top right, rgba(0,0,0,0) 0%,
+                 rgba(0,0,0,0) calc(50% - 5px),
+                 red 50%,
+                 rgba(0,0,0,0) calc(50% + 5px),
+                 rgba(0,0,0,0) 100%
+                 );
+    height: 100%;
+    width: 100%;
+}
+
+
+.sign:hover .crossed {
+    visibility: visible;
+}
+
+.column {
+    height: 80%;
+    width: 7px;
+    background-color: white;
+    margin: auto;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: auto;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    padding: 30px 0 70px 0;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 47px !important;
+    font-weight: bold;
+    font-style: italic;
+    white-space: pre-wrap;
+    color: white;
+    float: right;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 55px !important;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    white-space: pre-wrap;
+    color: white;
+    float: right;
+}
+
+.station {
+    padding-top: 80px;
+    padding-left: 12.5rem !important;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px !important;
+    font-weight: bold;
+    color: white;
+}
+
+.departure {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px !important;
+    font-weight: bold;
+    color: #00ad4b;
+    display: inline;
+}
+
+.arrival {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px !important;
+    font-weight: bold;
+    color: #f01616;
+    display: inline;
+}
+
+.m-logo {
+    display: inline;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px 30px 50px 30px;
+    margin: 45px 0 45px 0;
+}
+
+.form-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px !important;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.form-group {
+    margin: 35px 0 35px 0 !important;
+}
+
+input {
+    outline: none !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid #817b7b !important;
+}
+
+input:focus, input:active {
+    box-shadow: none !important;
+    outline: none !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid #817b7b !important;
+}
+
+.input-group-text {
+    border-radius: none !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid #817b7b !important;
+    padding: 0 !important;
+}
+
+.input-group-text img {
+    padding-left: 10px;
+}
+
+.btn-form {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px !important;
+    background-color: #194e7a;
+    color: white;
+    border: 2px solid #0000ff !important;
+}
+
+h6 {
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: white !important;
+    font-size: 41px !important;
+}
+
+.number {
+    margin: 25px;
+    display: inline;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: white !important;
+    font-size: 41px;
+    text-shadow:
+      -1px -1px 0 #12cb30,
+      1px -1px 0 #12cb30,
+      -1px 1px 0 #12cb30,
+      1px 1px 0 #12cb30;  
+}
+
+/* ABOUT */
+
+#about {
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.about-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px !important;
+    font-weight: bold;
+    padding-left: 55px;
+}
+
+.travel {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 60px;
+    font-size: 24px !important;
+}
+
+.about-img {
+    padding-right: 60px;
+    height: auto;
+    width: 100%;
+}
+
+.about-decs {
+    font-size: 18px !important;
+    font-family: 'Open Sans', sans-serif;
+    white-space: pre-wrap;
+    line-height: 36px;
+}
+
+/* PROVIDE */
+
+#provide {
+    padding-bottom: 30px;
+}
+
+.provide-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41px !important;
+    padding: 40px;
+}
+
+.provide-text {
+    font-size: 41px !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* PRICE */
+
+#price {
+    background-color: #e5e5e5;
+}
+
+.price-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px !important;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+.card {
+    width: 25rem;
+    margin: 0 auto; 
+    border: 2px solid #7a72ba !important;
+    border-radius: 20px !important;
+    margin-bottom: 100px;
+}
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px !important;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px !important;
+}
+
+.price-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px !important;
+    font-weight: bold;
+    color: #faa23d;
+}
+
+.card-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    background-color: #c43f1f !important;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px !important;
+}
+
+/* CONTACTS */
+
+#contacts {
+    padding-top: 45px;
+    padding-bottom: 90px;
+}
+
+.contact-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41px !important;
+    font-weight: bold;
+}
+
+.contact-desc {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px !important;
+    white-space: pre-wrap;
+    line-height: 48px;
+}
+
+.contact-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41px !important;
+}
+
+.contact-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: white !important;
+    background-color: #c43f1f !important;
+    padding: 15px 40px 15px 40px !important;
+    border: none !important;
+}
+
+.icons img{
+    margin: 20px 12px 20px 12px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #817b7b;
+    width: 100%;
+    height: 180px;
+    padding-top: 30px;
+}
+
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: #e5e5e5;
+}
+
+/* MODAL */
+
+.form-modal {
+    width: auto;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .station {
+        padding-left: 0 !important;
+    }
+
+    .number {
+        display: block;
+    }
+
+    .car {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2{
+        white-space: normal;
+        text-align: center;
+    }
+
+    .station {
+        text-align: center;
+    }
+
+    form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        width: auto !important;
+    }
+}
