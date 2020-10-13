@@ -1,5 +1,10 @@
-body{
+html, body{
     overflow-x: hidden;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 a {
@@ -59,6 +64,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     left: 0;
     z-index: 999;
     margin: 20px;
+    color: white !important;
+}
+
+.phone1 {
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: none;
+    margin-bottom: 140px;
+}
+
+.phone2 {
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: none;
+    margin-bottom: 80px;
 }
 
 /* NAV */
